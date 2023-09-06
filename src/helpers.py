@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from m3u8 import M3U8
 import requests
-from nytimes_scraper.src.exceptions import *
+from nyt_scraper.src.exceptions import *
 
 get_content_soup = (
     lambda soup, x: soup.get(x) if soup.get(x) else None if soup else None

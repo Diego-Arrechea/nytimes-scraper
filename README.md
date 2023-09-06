@@ -85,8 +85,8 @@ The `Scraper` class is the main interface for interacting with The New York Time
 ## Usage
 #### `Initializate`
 ```python
-import nytimes_scraper
-scraper = nytimes_scraper.Scraper()
+import nyt_scraper
+scraper = nyt_scraper.Scraper()
 ```
 #### `Search`
 You can perform searches in The New York Times database using the search function.

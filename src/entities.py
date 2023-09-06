@@ -1,6 +1,6 @@
-from nytimes_scraper.src.scraper.scraper import Scraper
-from nytimes_scraper.src.scraper import download
-from nytimes_scraper.src.scraper.parser.typename import detect_article
+from nyt_scraper.src.Scraper.scraper import Scraper
+from nyt_scraper.src.Scraper import download
+from nyt_scraper.src.Scraper.parser.typename import detect_article
 
 
 class _Array:

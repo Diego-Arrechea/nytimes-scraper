@@ -84,8 +84,8 @@ La clase Scraper es la interfaz principal para interactuar con el sitio web de T
 ## Uso
 #### `Inicialización`
 ```python
-import nytimes_scraper
-scraper = nytimes_scraper.Scraper()
+import nyt_scraper
+scraper = nyt_scraper.Scraper()
 ```
 #### `Search`
 Puedes realizar búsquedas en la base de datos de The New York Times utilizando la función de búsqueda.

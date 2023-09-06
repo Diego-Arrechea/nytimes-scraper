@@ -1,7 +1,7 @@
 import requests
-from nytimes_scraper.src import helpers
-from nytimes_scraper.src.scraper.parser import general
-from nytimes_scraper.src.scraper.parser import typename as typename__
+from nyt_scraper.src import helpers
+from nyt_scraper.src.Scraper.parser import general
+from nyt_scraper.src.Scraper.parser import typename as typename__
 import time
 
 
@@ -12,7 +12,6 @@ class Scraper:
             "accept": "*/*",
             "accept-language": "es-ES,es;q=0.9",
             "content-type": "application/json",
-            # 'cookie': 'nyt-a=c-sCclND4Hc_Dga6MYmT6P; nyt-gdpr=0; nyt-us=0; nyt-geo=AR; nyt-b3-traceid=1c0bcf2839034ef4abb261d9de51ac56; nyt-purr=cfhhcfhhhukfhufs',
             "nyt-app-type": "project-vi",
             "nyt-app-version": "0.0.5",
             "nyt-token": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs+/oUCTBmD/cLdmcecrnBMHiU/pxQCn2DDyaPKUOXxi4p0uUSZQzsuq1pJ1m5z1i0YGPd1U1OeGHAChWtqoxC7bFMCXcwnE1oyui9G1uobgpm1GdhtwkR7ta7akVTcsF8zxiXx7DNXIPd2nIJFH83rmkZueKrC4JVaNzjvD+Z03piLn5bHWU6+w+rA+kyJtGgZNTXKyPh6EC6o5N+rknNMG5+CdTq35p8f99WjFawSvYgP9V64kgckbTbtdJ6YhVP58TnuYgr12urtwnIqWP9KSJ1e5vmgf3tunMqWNm6+AnsqNj8mCLdCuc5cEB74CwUeQcP2HQQmbCddBy2y0mEwIDAQAB",
@@ -179,7 +178,6 @@ class Scraper:
             "accept": "*/*",
             "accept-language": "es-ES,es;q=0.6",
             "content-type": "application/json",
-            # 'cookie': 'nyt-a=8nkbxgkuV3Gja2XyS5ip1G; nyt-gdpr=0; nyt-us=0; nyt-geo=AR; nyt-cmots=eyJmcmVxdWVuY3kiOnsiMTQ3ODU0NjMxMyI6eyJpbmxpbmVVbml0Ijp7ImYiOjIsInMiOjIsImZjIjoxNjkyODMxMDMxLCJzYyI6MTY5MjgzMTAzMSwiY2EiOjE2OTI4MzEwMzF9fX19; nyt-m=BA1496F240AEF0BB41326AB6B04B4320&v=i.4&g=i.1&prt=i.0&iue=i.0&iir=i.0&vr=l.4.0.0.0.0&igd=i.1&imv=i.0&ira=i.0&ier=i.0&ird=i.0&fv=i.0&cav=i.1&imu=i.1&igu=i.1&uuid=s.fe36d3d4-cc82-4370-b471-63a01eafb673&l=l.4.96281133.2286573601.3239064505.449000204&e=i.1693576800&er=i.1692848565&vp=i.0&s=s.core&t=i.0&rc=i.0&pr=l.4.0.0.0.0&iga=i.0&igf=i.0&iru=i.1&n=i.2&ft=i.0&ica=i.0&iub=i.0&ifv=i.0; nyt-purr=cfhhpfhhhukfhufs; datadome=1o~mYUm_2_MCkYeGgNPreXBmp59HK--y8vfVv81WinQqd3VE4BtZa-5pVRegFPGU~LBU7~oQ4l-YoUyd4f6pw3aCzUUsHAP_pkEf_vI7jKP0~_76dmwZZmfkZPyXXWcl; nyt-b3-traceid=6f4f3bf7a5bb4975b8df69234b9800a1',
             "origin": "https://cooking.nytimes.com",
             "referer": "https://cooking.nytimes.com/",
             "sec-ch-ua": '"Chromium";v="116", "Not)A;Brand";v="24", "Brave";v="116"',

@@ -16,7 +16,7 @@ This Python library, NYTimes Scraper, is designed to scrape and interact with da
 Install the NYTimes Scraper library using `pip`:
 
 ```bash
-pip install nytimes-scraper
+pip install nyt-scraper
 ```
 
 ## Features

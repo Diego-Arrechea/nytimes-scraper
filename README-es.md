@@ -15,7 +15,7 @@ Esta biblioteca de Python, NYTimes Scraper, está diseñada para obtener e inter
 Instala la biblioteca NYTimes Scraper usando pip:
 
 ```bash
-pip install nytimes-scraper
+pip install nyt-scraper
 ```
 
 ## Funcionalidades

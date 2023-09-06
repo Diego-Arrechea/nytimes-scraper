@@ -10,12 +10,12 @@ nytimes_scraper_dir = os.path.join(current_dir, "..", "..")
 sys.path.append(nytimes_scraper_dir)
 
 
-import nytimes_scraper
+import nyt_scraper
 import time
 from pprint import pprint
 import pandas as pd
 
-scraper = nytimes_scraper.Scraper()
+scraper = nyt_scraper.Scraper()
 
 
 exit()

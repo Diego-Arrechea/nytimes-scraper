@@ -1,5 +1,5 @@
 # NYTimes Scraper
-Bienvenido al README de mi proyecto. Si prefieres leer esta documentación en ingles, puedes acceder desde aquí. [here](.README.md).
+Bienvenido al README de mi proyecto. Si prefieres leer esta documentación en ingles, puedes acceder desde aquí. [here](README.md).
 ## Introducción
 
 Esta biblioteca de Python, NYTimes Scraper, está diseñada para obtener e interactuar con datos del sitio web de The New York Times. Proporciona clases y funciones para extraer varios tipos de información, incluyendo artículos, videos, audios, paidpost, etc.
@@ -119,7 +119,7 @@ print(len(results))  # 30
 #### `Video`
 Recupera un objeto de Video para una URL específica
  ##### Ejemplo
- #
+
  ```python
 video = scraper.get_video(url="https://www.nytimes.com/video/world/asia/100000008963375/china-barbecue-restaurant-explosion.html")
 
@@ -142,7 +142,7 @@ Esto es iterable. Es útil para acceder a detalles específicos sobre cada versi
 ##### Methods
 - `download(self, path)`: Descarga la mejor calidad de video disponible entre las versiones y la guarda en la ubicación especificada por la ruta. Devuelve True si la descarga fue exitosa.
   - `path (str)`: la ubicación o directorio donde se debe guardar un archivo.
-#
+
 - `find(self, width=None, height=None, type_=None)`: Busca una versión específica dentro de la colección de versiones. Puedes especificar los siguientes criterios de búsqueda:
   - `width (int, optional)`: Ancho de la versión en píxeles.
   - `height (int, optional)`: Altura de la versión en píxeles.
@@ -150,7 +150,7 @@ Esto es iterable. Es útil para acceder a detalles específicos sobre cada versi
 Devuelve la primera versión que coincida con los criterios de búsqueda o None si no se encuentra ninguna coincidencia.
 
 ##### Ejemplo
-#
+
  ```python
 video = scraper.get_video(url="https://www.nytimes.com/video/world/asia/100000008963375/china-barbecue-restaurant-explosion.html")
 
@@ -177,7 +177,7 @@ La clase Images representa una colección de imágenes. Te permite trabajar con 
 ##### Methods
 - `download(self, path)`: Descarga la mejor resolución de imagen disponible y la guarda en la ubicación especificada por la ruta. Devuelve True si la descarga fue exitosa.
   - `path (str)`: la ubicación o directorio donde se debe guardar un archivo.
-#
+
 - `find(self, name=None, typename=None)`: Este método busca una imagen específica dentro de la colección de imágenes en función de los criterios proporcionados:
 
   - `name` (str, optional).
@@ -186,7 +186,6 @@ La clase Images representa una colección de imágenes. Te permite trabajar con 
   Devuelve la primera imagen que coincida con los criterios especificados o None si no se encuentra ninguna coincidencia.
 
 ##### Ejemplo
-#
 ```python
 # Accede a las imágenes disponibles
 person = scraper.get_person(url="https://www.nytimes.com/by/axel-boada")
@@ -214,3 +213,6 @@ image.download("articleLarge.jpg") # descarga imagen específica
 ### - Types -> Type
 ### - Images -> Image
 ### - Persons -> Person
+
+MIT License
+Copyright (c) 2023 Diego-Arrechea

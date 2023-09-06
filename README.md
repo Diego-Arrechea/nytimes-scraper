@@ -1,6 +1,6 @@
 # NYTimes Scraper
 Welcome to the README for my project. This documentation is primarily available in English.
-If you prefer to read this documentation in Spanish, you can access the Spanish version by clicking [here](.README-es.md).
+If you prefer to read this documentation in Spanish, you can access the Spanish version by clicking [here](README-es.md).
 ## Introduction
 
 This Python library, NYTimes Scraper, is designed to scrape and interact with data from The New York Times website. It provides classes and functions to extract various types of information, including articles, sections, types, renditions, and more.
@@ -93,7 +93,7 @@ You can perform searches in The New York Times database using the search functio
 ##### Methods
 - `next(self)`: Retrieves the next 10 entries on each call and returns a list of entries representing the new results. It also updates the list of `Search.entries`. Please note that a maximum of 1000 entries can be obtained from a search
 ##### Example
-#
+
 ```python
 results = scraper.search(keyword="restaurant", sort="oldest", type_="article", section="food")
 print(results)
@@ -120,8 +120,8 @@ print(len(results))  # 30
 
 #### `Video`
  Retrieve a Video object for a specific URL
- ##### Example
- #
+
+##### Example
  ```python
 video = scraper.get_video(url="https://www.nytimes.com/video/world/asia/100000008963375/china-barbecue-restaurant-explosion.html")
 
@@ -144,7 +144,7 @@ This is an iterable. Helpful To access specific details about each rendition, yo
 ##### Methods
 - `download(self, path)`: Downloads the best available video quality among the renditions and saves it to the location specified by path. Returns True if the download was successful.
   - `path (str)`: the location or directory where a file should be saved or retrieved
-#
+
 - `find(self, width=None, height=None, type_=None)`: Searches for a specific rendition within the collection of renditions. You can specify the following search criteria:
 
   - `width (int, optional)`: Width of the rendition in pixels.
@@ -153,7 +153,7 @@ This is an iterable. Helpful To access specific details about each rendition, yo
 It returns the first rendition that matches the search criteria or None if no match is found.
 
 ##### Example
-#
+
  ```python
 video = scraper.get_video(url="https://www.nytimes.com/video/world/asia/100000008963375/china-barbecue-restaurant-explosion.html")
 
@@ -180,7 +180,7 @@ The `Images` class represents a collection of images. It allows you to work with
 ##### Methods
 - `download(self, path)`: Downloads the best resolution image and saves it to the location specified by path. Returns True if the download was successful.
   - `path (str)`: the location or directory where a file should be saved or retrieved
-#
+
 - `find(self, name=None, typename=None)`: This method searches for a specific image within the collection of images based on the given criteria:
 
   - `name` (str, optional).
@@ -189,7 +189,7 @@ The `Images` class represents a collection of images. It allows you to work with
   It returns the first image that matches the specified criteria or None if no match is found.
 
 ##### Example
-#
+
 ```python
 # Access available images
 person = scraper.get_person(url="https://www.nytimes.com/by/axel-boada")
@@ -215,4 +215,7 @@ image.download("articleLarge.jpg") # download specific image
 ### - Subsections -> Sections
 ### - Types -> Type
 ### - Images -> Image
-## - Persons -> Person
+### - Persons -> Person
+
+MIT License
+Copyright (c) 2023 Diego-Arrechea

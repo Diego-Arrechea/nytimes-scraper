@@ -16,10 +16,7 @@ from pprint import pprint
 import pandas as pd
 
 scraper = nyt_scraper.Scraper()
-
-
-exit()
-Search = Object.search("restaurant", sort="oldest", section="food", type_="article")
+Search = scraper.search("restaurant", sort="newest", section="food", type_="article")
 
 for x in range(99):
     Search.next()
